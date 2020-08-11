@@ -18,7 +18,7 @@ namespace Cliente
             using (var client = new HttpClient())
             {
                 var html = await client.GetStringAsync($"http://localhost:60818/api/operacao/{valor}");
-                Console.WriteLine(html);
+                Console.WriteLine(html); 
             }
         }
     }
